@@ -16,7 +16,7 @@ jobs:
       - name: copy
         
         run: |
-          files=$(find **.README.md -type f) # get the file list
+          files=$(find -name README.md -type f) # get the file list
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
           git fetch                         # fetch branches
